@@ -3763,9 +3763,9 @@ class FH_UltimateBot(ctk.CTk):
             "liketag.png",
             region=self.regions["全界面"],
             fast_mode=True,
-            main_threshold=0.75,
+            main_threshold=0.65,
             like_threshold=0.7,
-            final_threshold=0.75,
+            final_threshold=0.65,
             timeout=2,
             interval=0.25
         )
@@ -3802,9 +3802,9 @@ class FH_UltimateBot(ctk.CTk):
                     "skillcar.png",
                     "liketag.png",
                     region=self.regions["全界面"],
-                    main_threshold=0.75,
+                    main_threshold=0.65,
                     like_threshold=0.7,
-                    final_threshold=0.75,
+                    final_threshold=0.65,
                     timeout=2,
                     interval=0.25,
                     fast_mode=True
@@ -4260,9 +4260,9 @@ class FH_UltimateBot(ctk.CTk):
                         "newCC.png",
                         "newcartag.png",
                         region=self.regions["全界面"],
-                        main_threshold=0.75,   # 防HDR核心：第一道门槛放低
+                        main_threshold=0.7,   # 防HDR核心：第一道门槛放低
                         like_threshold=0.75,
-                        final_threshold=0.75,
+                        final_threshold=0.7,
                         timeout=1.0,
                         interval=0.2,
                         fast_mode=True
@@ -4329,6 +4329,7 @@ class FH_UltimateBot(ctk.CTk):
                 self.log("找不到升级页面")
                 return False
 
+            time.sleep(1.5)
             self.game_click(pos_sjy)
             self.sleep_ui(0.5)
 
