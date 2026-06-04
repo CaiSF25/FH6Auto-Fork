@@ -2948,9 +2948,9 @@ class FH_UltimateBot(ctk.CTk):
 
                     # 综合计算总分
                     final_score = (
-                        color_score * 0.30 +
-                        gray_score * 0.20 +
-                        edge_score * 0.20 +
+                        color_score * 0.35 +
+                        gray_score * 0.25 +
+                        edge_score * 0.10 +
                         center_score * 0.30
                     )
 
